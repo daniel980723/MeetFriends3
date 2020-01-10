@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.meetfriends3.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_moment"
+        android:name="com.example.meetfriends3.ui.gallery.GalleryFragment"
+        android:label="Moment"
+        tools:layout="@layout/fragment_moment" />
+
+    <fragment
+        android:id="@+id/nav_matches"
+        android:name="com.example.meetfriends3.ui.slideshow.SlideshowFragment"
+        android:label="Matches"
+        tools:layout="@layout/fragment_matches" />
+
+    <fragment
+        android:id="@+id/nav_setting"
+        android:name="com.example.meetfriends3.ui.tools.ToolsFragment"
+        android:label="Setting"
+        tools:layout="@layout/fragment_setting" />
+
+    <fragment
+        android:id="@+id/nav_help"
+        android:name="com.example.meetfriends3.ui.share.ShareFragment"
+        android:label="Help"
+        tools:layout="@layout/fragment_help" />
+
+    <fragment
+        android:id="@+id/nav_invite"
+        android:name="com.example.meetfriends3.ui.send.SendFragment"
+        android:label="Invite"
+        tools:layout="@layout/fragment_invite" />
+</navigation>
