@@ -81,43 +81,20 @@
                 android:orientation="horizontal">
 
                 <TextView
-                    android:id="@+id/textViewRegName"
+                    android:id="@+id/textViewRegContact"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="@string/name" />
+                    android:text="@string/phone" />
 
                 <EditText
-                    android:id="@+id/editTextRegName"
+                    android:id="@+id/editTextRegContact"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:ems="10"
                     android:hint="@string/name"
                     android:inputType="textPersonName" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:id="@+id/textViewRegPhone"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="TextView"
-                    tools:text="@string/phone" />
-
-                <EditText
-                    android:id="@+id/editTextRegPhone"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:ems="10"
-                    android:hint="@string/phone"
-                    android:inputType="phone" />
             </LinearLayout>
 
             <LinearLayout
@@ -133,6 +110,7 @@
                     android:text="@string/gender" />
 
                 <RadioGroup
+                    android:id="@+id/rdg"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
@@ -204,21 +182,51 @@
                 android:orientation="horizontal">
 
                 <TextView
-                    android:id="@+id/textViewRegRegion"
+                    android:id="@+id/textViewRegAddress"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="@string/region" />
+                    android:text="@string/Address" />
 
                 <EditText
-                    android:id="@+id/editTextRegRegion"
+                    android:id="@+id/editTextRegAddress"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:ems="10"
-                    android:hint="@string/region"
+                    android:hint="@string/Address"
+                    android:inputType="textPersonName" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textViewRegDesciption"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/description" />
+
+                <EditText
+                    android:id="@+id/editTextRegDescription"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="@string/descHint"
                     android:inputType="textPersonName" />
             </LinearLayout>
+
+            <Button
+                android:id="@+id/buttonRegisterNow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/registerNow" />
 
         </LinearLayout>
     </ScrollView>

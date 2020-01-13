@@ -47,17 +47,24 @@
     <string name="login_failed">"Login failed"</string>
     <string name="username">Username</string>
     <string name="password">Password</string>
-    <string name="username">Username</string>
+
     <string name="signIn">Sign In</string>
     <string name="register">Register</string>
     <string name="registerForm">Registration Form</string>
-    <string name="name">Name</string>
     <string name="name">Name</string>
     <string name="phone">Phone</string>
     <string name="male">Male</string>
     <string name="female">Female</string>
     <string name="gender">Gender</string>
-    <string name="age">Age</string>
+
     <string name="email">Email</string>
     <string name="region">Region</string>
+    <string name="url_server">https://memberhoho.000webhostapp.com/api/</string>
+    <string name="url_user_read">user/read.php</string>
+    <string name="url_user_read_one">user/read_one.php</string>
+    <string name="url_user_create">user/create.php</string>
+    <string name="Address">address</string>
+    <string name="descHint">Describe Yourself</string>
+    <string name="description">Description</string>
+    <string name="registerNow">Register Now!</string>
 </resources>
