@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".RegisterActivity">
+    tools:context=".RegisterActivity"
+    >
 
     <ScrollView
         android:layout_width="0dp"
@@ -29,7 +30,9 @@
                 android:id="@+id/textViewRegForm"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/registerForm" />
+                android:text="@string/registerForm"
+                android:textColor="@android:color/black"
+                android:textSize="24sp" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -38,10 +41,11 @@
 
                 <TextView
                     android:id="@+id/textViewRegUsername"
-                    android:layout_width="wrap_content"
+                    android:layout_width="25dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="@string/username" />
+                    android:text="@string/username"
+                    android:textColor="@android:color/black" />
 
                 <EditText
                     android:id="@+id/editTextRegUsername"
@@ -50,7 +54,8 @@
                     android:layout_weight="1"
                     android:ems="10"
                     android:hint="@string/username"
-                    android:inputType="textPersonName" />
+                    android:inputType="textPersonName"
+                    android:textColor="@android:color/black" />
             </LinearLayout>
 
             <LinearLayout
@@ -60,10 +65,11 @@
 
                 <TextView
                     android:id="@+id/textViewRegPassword"
-                    android:layout_width="wrap_content"
+                    android:layout_width="25dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="@string/password" />
+                    android:text="@string/password"
+                    android:textColor="@android:color/black" />
 
                 <EditText
                     android:id="@+id/editTextRegPassword"
@@ -72,7 +78,8 @@
                     android:layout_weight="1"
                     android:ems="10"
                     android:hint="@string/password"
-                    android:inputType="textPassword" />
+                    android:inputType="textPassword"
+                    android:textColor="@android:color/black" />
             </LinearLayout>
 
             <LinearLayout
@@ -82,10 +89,11 @@
 
                 <TextView
                     android:id="@+id/textViewRegContact"
-                    android:layout_width="wrap_content"
+                    android:layout_width="25dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="@string/phone" />
+                    android:text="@string/phone"
+                    android:textColor="@android:color/black" />
 
                 <EditText
                     android:id="@+id/editTextRegContact"
@@ -94,7 +102,8 @@
                     android:layout_weight="1"
                     android:ems="10"
                     android:hint="@string/name"
-                    android:inputType="textPersonName" />
+                    android:inputType="textPersonName"
+                    android:textColor="@android:color/black" />
             </LinearLayout>
 
             <LinearLayout
@@ -104,10 +113,13 @@
 
                 <TextView
                     android:id="@+id/textViewRegGender"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="105dp"
+                    android:layout_height="40dp"
                     android:layout_weight="0"
-                    android:text="@string/gender" />
+                    android:foregroundGravity="center"
+                    android:gravity="center|left"
+                    android:text="@string/gender"
+                    android:textColor="@android:color/black" />
 
                 <RadioGroup
                     android:id="@+id/rdg"
@@ -120,14 +132,20 @@
                         android:id="@+id/radioButtonMale"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:layout_gravity="center"
                         android:layout_weight="1"
+                        android:foregroundGravity="center"
+                        android:gravity="center|left"
                         android:text="@string/male" />
 
                     <RadioButton
                         android:id="@+id/radioButtonFemale"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:layout_gravity="center"
                         android:layout_weight="1"
+                        android:foregroundGravity="center"
+                        android:gravity="center|left"
                         android:text="@string/female" />
                 </RadioGroup>
             </LinearLayout>
@@ -139,10 +157,11 @@
 
                 <TextView
                     android:id="@+id/textViewRegAge"
-                    android:layout_width="wrap_content"
+                    android:layout_width="25dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="@string/age" />
+                    android:text="@string/age"
+                    android:textColor="@android:color/black" />
 
                 <EditText
                     android:id="@+id/editTextRegAge"
@@ -151,7 +170,8 @@
                     android:layout_weight="1"
                     android:ems="10"
                     android:hint="@string/age"
-                    android:inputType="number" />
+                    android:inputType="number"
+                    android:textColor="@android:color/black" />
             </LinearLayout>
 
             <LinearLayout
@@ -161,10 +181,11 @@
 
                 <TextView
                     android:id="@+id/textViewRegEmail"
-                    android:layout_width="wrap_content"
+                    android:layout_width="25dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="@string/email" />
+                    android:text="@string/email"
+                    android:textColor="@android:color/black" />
 
                 <EditText
                     android:id="@+id/editTextRegEmail"
@@ -173,7 +194,8 @@
                     android:layout_weight="1"
                     android:ems="10"
                     android:hint="@string/email"
-                    android:inputType="textEmailAddress" />
+                    android:inputType="textEmailAddress"
+                    android:textColor="@android:color/black" />
             </LinearLayout>
 
             <LinearLayout
@@ -183,10 +205,11 @@
 
                 <TextView
                     android:id="@+id/textViewRegAddress"
-                    android:layout_width="wrap_content"
+                    android:layout_width="25dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="@string/Address" />
+                    android:text="@string/Address"
+                    android:textColor="@android:color/black" />
 
                 <EditText
                     android:id="@+id/editTextRegAddress"
@@ -195,7 +218,8 @@
                     android:layout_weight="1"
                     android:ems="10"
                     android:hint="@string/Address"
-                    android:inputType="textPersonName" />
+                    android:inputType="textPersonName"
+                    android:textColor="@android:color/black" />
 
             </LinearLayout>
 
@@ -207,10 +231,11 @@
 
                 <TextView
                     android:id="@+id/textViewRegDesciption"
-                    android:layout_width="wrap_content"
+                    android:layout_width="25dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="@string/description" />
+                    android:text="@string/description"
+                    android:textColor="@android:color/black" />
 
                 <EditText
                     android:id="@+id/editTextRegDescription"
@@ -219,7 +244,8 @@
                     android:layout_weight="1"
                     android:ems="10"
                     android:hint="@string/descHint"
-                    android:inputType="textPersonName" />
+                    android:inputType="textPersonName"
+                    android:textColor="@android:color/black" />
             </LinearLayout>
 
             <Button

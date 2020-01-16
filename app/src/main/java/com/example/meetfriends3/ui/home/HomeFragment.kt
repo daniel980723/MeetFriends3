@@ -1,6 +1,5 @@
 package com.example.meetfriends3.ui.home
 
-import android.content.Context
 import android.os.Bundle
 import android.util.Log
 import android.view.LayoutInflater
@@ -8,6 +7,9 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProviders
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
+
 import com.android.volley.DefaultRetryPolicy
 import com.android.volley.Request
 import com.android.volley.Response
@@ -16,13 +18,16 @@ import com.example.meetfriends3.MySingleton
 import com.example.meetfriends3.R
 import com.example.meetfriends3.RegisterActivity.Companion.TAG
 import com.example.meetfriends3.User
+import com.example.meetfriends3.UserAdapter
+import kotlinx.android.synthetic.main.fragment_home.*
 import org.json.JSONArray
 import org.json.JSONObject
 
 class HomeFragment : Fragment() {
 
     private lateinit var homeViewModel: HomeViewModel
-
+    lateinit var userList: ArrayList<User>
+    lateinit var adapter: UserAdapter
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
@@ -35,15 +40,38 @@ class HomeFragment : Fragment() {
         //homeViewModel.text.observe(this, Observer {
         //   textView.text = it
         //})
+        //Initialise variables and UI
+
+        userList = ArrayList<User>()
+
+        adapter = UserAdapter(activity!!.applicationContext)
+        adapter.setUsers(userList)
+        //read()
+
+        val recycleView = root.findViewById<RecyclerView>(R.id.recycleview)
+
+            //recycleview.adapter = adapter
+        //recycleview.layoutManager = LinearLayoutManager(activity!!.applicationContext)
+
+        buttonDislike.setOnClickListener(){
+            read()
+        }
         return root
+
+
+
+
+
     }
-    private fun syncContact() {
+
+
+    private fun read() {
         val url = getString(R.string.url_server) + getString(R.string.url_user_read)
 
         //Display progress bar
 
         //Delete all user records
-
+        userList.clear()
 
         val jsonObjectRequest = JsonObjectRequest(
             Request.Method.GET, url, null,
@@ -71,7 +99,9 @@ class HomeFragment : Fragment() {
 
 
                             )
-
+                            userList.add(user)
+                            recycleview.adapter = adapter
+                            recycleview.layoutManager = LinearLayoutManager(activity!!.applicationContext)
 
                         }
 
@@ -97,8 +127,10 @@ class HomeFragment : Fragment() {
 
         // Access the RequestQueue through your singleton class.
         jsonObjectRequest.tag = TAG
-        MySingleton.getInstance().addToRequestQueue(jsonObjectRequest)
+        MySingleton.getInstance(activity!!.applicationContext).addToRequestQueue(jsonObjectRequest)
 
     }
 
 }
+
+

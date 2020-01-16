@@ -27,7 +27,7 @@ class RegisterActivity : AppCompatActivity() {
             createUser(User(editTextRegUsername.text.toString(),
                 editTextRegPassword.text.toString(),
                 (editTextRegContact.text.toString()).toInt(),
-                genderInput,
+                genderInput.toString(),
                 (editTextRegAge.text.toString()).toInt(),
                 editTextRegEmail.text.toString(),
                 editTextRegAddress.text.toString(),

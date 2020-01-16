@@ -67,4 +67,16 @@
     <string name="descHint">Describe Yourself</string>
     <string name="description">Description</string>
     <string name="registerNow">Register Now!</string>
+
+    <string name="app_nameTrue">MeetFriends</string>
+    <string name="zero">0</string>
+    <string name="help1">It is very easy to use this app! Since everything is written in English language, you should be able to understand which word refer to what function!</string>
+    <string name="help2">On the Main Page, you can tap and Like more people that show ups! However, the person you have liked had to like you back before both of you can be matches.</string>
+    <string name="help3">Our Customer Service Number is : 03-366366366</string>
+    <string name="moment">Moment</string>
+    <string name="matches">Matches</string>
+    <string name="settings">Settings</string>
+    <string name="help">Help</string>
+    <string name="invite">Invite</string>
+    <string name="inviteLink">www.invitemeetfriend.com</string>
 </resources>
